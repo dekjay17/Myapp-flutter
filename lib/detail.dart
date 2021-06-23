@@ -20,15 +20,17 @@ class _DetailProdukState extends State<DetailProduk> {
     for (var i = 0; i < widget.star; i++) {
       childrenstar.add(new Icon(
         Icons.star,
-        size: 15,
-        color: Colors.yellow,
+        size: 20,
+        color: Colors.yellow[700],
       ));
     }
 
     return Scaffold(
       appBar: new AppBar(
         title: new Text("${widget.nama}"),
+        backgroundColor: Colors.orangeAccent[500],
       ),
+      backgroundColor: Colors.orange[100],
       body: new Container(
         width: double.infinity,
         child: new ListView(
@@ -43,10 +45,10 @@ class _DetailProdukState extends State<DetailProduk> {
                 gradient: LinearGradient(
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
-                  colors: [const Color(0xff3164b), const Color(0xff295cb5)],
+                  colors: [const Color(0xFFE65100), const Color(0xFFFF6F)],
                 ),
               ),
-              padding: EdgeInsets.all(10),
+              padding: EdgeInsets.all(10.0),
               child: new Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -55,11 +57,11 @@ class _DetailProdukState extends State<DetailProduk> {
                   ),
                   new Container(
                     child: new Text(
-                      this.widget.harga.toString(),
+                      "Rp. " + this.widget.harga.toString(),
                       style: new TextStyle(
                           fontSize: 18.0,
                           fontWeight: FontWeight.bold,
-                          color: Colors.red.shade500,
+                          color: Colors.white,
                           fontFamily: "NeoSansBold"),
                     ),
                   )
@@ -68,10 +70,13 @@ class _DetailProdukState extends State<DetailProduk> {
             ),
             Container(
               padding: EdgeInsets.all(10),
-              color: Colors.blue.shade700,
+              color: Colors.orange[100],
               width: double.infinity,
               height: double.maxFinite,
-              child: new Text(widget.deskripsi),
+              child: new Text(
+                widget.deskripsi,
+                style: new TextStyle(color: Colors.white),
+              ),
             )
           ],
         ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'detail_about.dart' as detail;
+import 'detail.dart' as detail;
 
 class Menudrawer extends StatelessWidget {
   @override
@@ -10,29 +10,22 @@ class Menudrawer extends StatelessWidget {
         children: <Widget>[
           UserAccountsDrawerHeader(
             //bagian header pada drawer
-            accountName: Text("Wahyu Wastu"),
-            accountEmail: Text("wahyu.wastuguna@undiksha.ac.id"),
+            accountName: Text("Daniel Sihite"),
+            accountEmail: Text("sihitedaniel710@gmail.com"),
             currentAccountPicture: GestureDetector(
               onTap: () {},
               child: CircleAvatar(
-                backgroundImage: AssetImage("assets/appimage/formal.jpeg"),
+                backgroundImage: AssetImage("assets/appimage/Daniel.jpeg"),
               ),
             ),
             decoration: BoxDecoration(
-                color: Colors.lightBlue), // mewarnai background drawer
+                color: Colors.orange[800]), // mewarnai background drawer
           ),
           ListTile(
             //widget untuk drawer di bagian list tilenya
-            title: Text("Profile"),
+            onTap: () {},
+            title: Text("Profil"),
             trailing: Icon(Icons.account_circle),
-          ),
-          ListTile(
-            title: Text("Settings"),
-            trailing: Icon(Icons.settings),
-          ),
-          ListTile(
-            title: Text("Log Out"),
-            trailing: Icon(Icons.logout),
           ),
           ListTile(
             onTap: () {},
@@ -42,16 +35,21 @@ class Menudrawer extends StatelessWidget {
           ListTile(
             onTap: () {
               Navigator.of(context).push(new MaterialPageRoute(
-                builder: (BuildContext context) => detail.DetailMenu(
-                  nama: "Tentang Aplikasi Penjualan PC & LAPTOP",
+                builder: (BuildContext context) => detail.DetailProduk(
+                  nama: "Media Penjualan Khusus LCD Xiaomi",
                   deskripsi:
-                      "Aplikasi penjualan ini bersifat sangat modern karena banyak sekali laptop dan pc keluaran terbaru akan selalu update setiap hari nya ",
-                  gambar: "1.jpg",
+                      "Aplikasi ini merupakan media penjualan LCD khusus brand Xiaomi, yang dimana memudahkan pengguna dalam membeli produk LCD Smartphone Xiaomi mereka.",
+                  gambar: "about.png",
                 ),
               ));
             },
-            title: Text(" About "),
-            trailing: Icon(Icons.info_outline),
+            title: Text("Tentang Aplikasi"),
+            trailing: Icon(Icons.help),
+          ),
+          ListTile(
+            onTap: () {},
+            title: Text("Keluar"),
+            trailing: Icon(Icons.logout),
           )
         ],
       ),
