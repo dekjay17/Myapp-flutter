@@ -12,7 +12,7 @@ class _InputPenjualanState extends State<InputPenjualan> {
   final _fromkey = GlobalKey<FormState>();
   Future saveUpload() async {
     final response =
-        await http.post(Uri.parse("http://192.168.1.34:80/api/inputs"), body: {
+        await http.post(Uri.parse("http://192.168.1.8/api/inputs"), body: {
       "namaBarang": nameController.text,
       "namaPembeli": pembeliController.text,
       "JumlahBarang": jumlahController.text,
@@ -31,9 +31,9 @@ class _InputPenjualanState extends State<InputPenjualan> {
     return Scaffold(
       appBar: AppBar(
           leading: Icon(Icons.keyboard_arrow_left),
-          backgroundColor: Colors.orange[800]),
+          backgroundColor: Colors.deepPurple[900]),
       body: Container(
-        color: Colors.orange[100],
+        color: Colors.deepPurple[100],
         child: Form(
           key: _fromkey,
           child: Padding(
@@ -63,7 +63,7 @@ class _InputPenjualanState extends State<InputPenjualan> {
                     controller: pembeliController,
                     keyboardType: TextInputType.text,
                     decoration: InputDecoration(
-                        labelText: "Nama Pembeli",
+                        labelText: "Ukuran",
                         border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(3.0))),
                     validator: (value) {
@@ -97,7 +97,7 @@ class _InputPenjualanState extends State<InputPenjualan> {
                     controller: hargaController,
                     keyboardType: TextInputType.text,
                     decoration: InputDecoration(
-                        labelText: "Harga Barang",
+                        labelText: "Alamat",
                         border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(3.0))),
                     validator: (value) {

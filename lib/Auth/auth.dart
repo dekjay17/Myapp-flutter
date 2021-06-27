@@ -5,7 +5,6 @@ import '../dashboard.dart';
 import 'autentikasi.dart';
 
 const users = const {
-  'admin@gmail.com': '12345678',
   'hunter@gmail.com': 'hunter',
 };
 

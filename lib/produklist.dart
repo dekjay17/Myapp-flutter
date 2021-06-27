@@ -7,7 +7,7 @@ class produk extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("List Produk")),
-      backgroundColor: Colors.orange[100],
+      backgroundColor: Colors.deepPurple[50],
       body: ListView(
         shrinkWrap: true,
         padding: const EdgeInsets.fromLTRB(2.0, 10.0, 2.0, 10.0),
@@ -16,103 +16,230 @@ class produk extends StatelessWidget {
             onTap: () {
               Navigator.of(context).push(new MaterialPageRoute(
                 builder: (BuildContext context) => DetailProduk(
-                  nama: "Lcd Redmi 5+ (Black)",
+                  nama: "Jersey Home Arsenal",
                   deskripsi:
-                      "Lcd komplit dengan tc (touchscreen) Redmi 5 Plus warna Hitam bergaransi. Free Tempered Glass. Barang bergaransi, jika terjadi kerusakan silahkan menghubungi admin dengan menyertakan video unboxing paket. Free Tempered Glass dan case bening.",
-                  harga: 200000,
-                  gambar: "Redmi 5+.jpg",
+                      "Baju jersey home Arsenal brand new musim 2020/2021, tersedia size S,M,L,XL. Size chart PxL : S(50x68), M(52x70), L(54x72), XL(56x74)",
+                  harga: 85000,
+                  gambar: "arsenal1.jpeg",
                   star: 5,
                 ),
               ));
             },
             child: ProductBox(
-                nama: "Lcd Redmi 5+ (Black)",
-                deskripsi: "Lcd + tc Redmi 5 Plus warna Hitam",
-                harga: 200000,
-                gambar: "Redmi 5+.jpg",
+                nama: "Jersey Home Arsenal",
+                deskripsi: "Baju jersey home Arsenal brand new musim 2020/2021",
+                harga: 85000,
+                gambar: "arsenal1.jpeg",
                 star: 5),
           ),
           new GestureDetector(
             onTap: () {
               Navigator.of(context).push(new MaterialPageRoute(
                 builder: (BuildContext context) => DetailProduk(
-                  nama: "Lcd Redmi 6A (White)",
+                  nama: "Jersey third Chelsea",
                   deskripsi:
-                      "Lcd komplit dengan tc (touchscreen) Redmi 6A warna Putih bergaransi. Free Tempered Glass dan Case bening. Barang bergaransi, jika terjadi kerusakan silahkan menghubungi admin dengan menyertakan video unboxing paket. Free Tempered Glass dan case bening.",
-                  harga: 250000,
-                  gambar: "Redmi 6A.jpg",
+                      "Baju jersey third Chelsea brand new musim 2020/2021, tersedia size S,M,L,XL. Size chart PxL : S(50x68), M(52x70), L(54x72), XL(56x74)",
+                  harga: 85000,
+                  gambar: "chelsea3.jpeg",
                   star: 4,
                 ),
               ));
             },
             child: ProductBox(
-                nama: "LCD + TC REDMI 6A WARNA PUTIH",
-                deskripsi: "Lcd Redmi 6A (White)",
-                harga: 250000,
-                gambar: "Redmi 6A.jpg",
-                star: 4),
-          ),
-          new GestureDetector(
-            onTap: () {
-              Navigator.of(context).push(new MaterialPageRoute(
-                builder: (BuildContext context) => DetailProduk(
-                  nama: "Lcd + Tc Redmi Note 7 (Black)",
-                  deskripsi:
-                      "Lcd komplit dengan tc (touchscreen) Redmi Note 7 bergaransi. Free Tempered Glass. Barang bergaransi, jika terjadi kerusakan silahkan menghubungi admin dengan menyertakan video unboxing paket. Free Tempered Glass dan case bening.",
-                  harga: 350000,
-                  gambar: "Redmi Note 7.jpg",
-                  star: 5,
-                ),
-              ));
-            },
-            child: ProductBox(
-                nama: "LCD + TC REDMI NOTE 7",
+                nama: "Jersey third Chelsea",
                 deskripsi:
-                    "Lcd komplite dengan touchscreen Redmi Note 7 warna Hitam. ",
-                harga: 300000,
-                gambar: "Redmi Note 7.jpg",
-                star: 5),
-          ),
-          new GestureDetector(
-            onTap: () {
-              Navigator.of(context).push(new MaterialPageRoute(
-                builder: (BuildContext context) => DetailProduk(
-                  nama: "LCD REDMI NOTE 8 PRO",
-                  deskripsi:
-                      "Lcd Redmi Note 8 Pro ORIGINAL. Barang bergaransi, jika terjadi kerusakan silahkan menghubungi admin dengan menyertakan video unboxing paket. Free Tempered Glass dan case bening.",
-                  harga: 400000,
-                  gambar: "Redmi Note 8 Pro.jpg",
-                  star: 4,
-                ),
-              ));
-            },
-            child: ProductBox(
-                nama: "LCD REDMI NOTE 8 PRO",
-                deskripsi: "Redmi Note 8 Pro ORIGINAL",
-                harga: 400000,
-                gambar: "Redmi Note 8 Pro.jpg",
+                    "Baju jersey third Chelsea brand new musim 2020/2021",
+                harga: 85000,
+                gambar: "chelsea3.jpeg",
                 star: 4),
           ),
           new GestureDetector(
             onTap: () {
               Navigator.of(context).push(new MaterialPageRoute(
                 builder: (BuildContext context) => DetailProduk(
-                  nama: "Redmi Note 9 Pro",
+                  nama: "Jersey third Barcelona",
                   deskripsi:
-                      "Lcd Redmi Note 9 Pro ORIGINAL. Barang bergaransi, jika terjadi kerusakan silahkan menghubungi admin dengan menyertakan video unboxing paket. Free Tempered Glass dan case bening.",
-                  harga: 600000,
-                  gambar: "Redmi Note 9 Pro.jpg",
+                      "Baju jersey third Barcelona brand new musim 2020/2021, tersedia size S,M,L,XL. Size chart PxL : S(50x68), M(52x70), L(54x72), XL(56x74)",
+                  harga: 85000,
+                  gambar: "barca3.jpeg",
                   star: 5,
                 ),
               ));
             },
             child: ProductBox(
-                nama: "REDMI NOTE 9 PRO",
-                deskripsi: "Redmi Note 9 Pro ORIGINAL",
-                harga: 600000,
-                gambar: "Redmi Note 9 Pro.jpg",
+                nama: "Jersey third Barcelona",
+                deskripsi:
+                    "Baju jersey third Barcelona brand new musim 2020/2021",
+                harga: 85000,
+                gambar: "barca3.jpeg",
                 star: 5),
           ),
+          new GestureDetector(
+            onTap: () {
+              Navigator.of(context).push(new MaterialPageRoute(
+                builder: (BuildContext context) => DetailProduk(
+                  nama: "Jersey home Inter Milan",
+                  deskripsi:
+                      "Baju jersey home Inter Milan brand new musim 2020/2021, tersedia size S,M,L,XL. Size chart PxL : S(50x68), M(52x70), L(54x72), XL(56x74)",
+                  harga: 85000,
+                  gambar: "inter1.jpeg",
+                  star: 5,
+                ),
+              ));
+            },
+            child: ProductBox(
+                nama: "Jersey home Inter",
+                deskripsi: "Baju jersey home Inter Milan musim 2020/2021",
+                harga: 85000,
+                gambar: "inter1.jpeg",
+                star: 5),
+          ),
+          new GestureDetector(
+            onTap: () {
+              Navigator.of(context).push(new MaterialPageRoute(
+                builder: (BuildContext context) => DetailProduk(
+                  nama: "Jersey home Juventus",
+                  deskripsi:
+                      "Baju jersey home Juventus brand new musim 2020/2021, tersedia size S,M,L,XL. Size chart PxL : S(50x68), M(52x70), L(54x72), XL(56x74)",
+                  harga: 85000,
+                  gambar: "juve1.jpeg",
+                  star: 5,
+                ),
+              ));
+            },
+            child: ProductBox(
+                nama: "Jersey home Juventus",
+                deskripsi:
+                    "Baju jersey home Juventus brand new musim 2020/2021",
+                harga: 85000,
+                gambar: "juve1.jpeg",
+                star: 5),
+          ),
+          new GestureDetector(
+            onTap: () {
+              Navigator.of(context).push(new MaterialPageRoute(
+                builder: (BuildContext context) => DetailProduk(
+                  nama: "Jersey home Liverpool",
+                  deskripsi:
+                      "Baju jersey home Liverpool brand new musim 2020/2021, tersedia size S,M,L,XL. Size chart PxL : S(50x68), M(52x70), L(54x72), XL(56x74)",
+                  harga: 85000,
+                  gambar: "liverpool1.jpeg",
+                  star: 5,
+                ),
+              ));
+            },
+            child: ProductBox(
+                nama: "Jersey home Liverpool",
+                deskripsi:
+                    "Baju jersey home Liverpool brand new musim 2020/2021",
+                harga: 85000,
+                gambar: "liverpool1.jpeg",
+                star: 5),
+          ),
+          new GestureDetector(
+            onTap: () {
+              Navigator.of(context).push(new MaterialPageRoute(
+                builder: (BuildContext context) => DetailProduk(
+                  nama: "Jersey home Real Madrid",
+                  deskripsi:
+                      "Baju jersey home Real Madrid brand new musim 2020/2021, tersedia size S,M,L,XL. Size chart PxL : S(50x68), M(52x70), L(54x72), XL(56x74)",
+                  harga: 85000,
+                  gambar: "madrid1.jpeg",
+                  star: 5,
+                ),
+              ));
+            },
+            child: ProductBox(
+                nama: "Jersey home Real Madrid",
+                deskripsi:
+                    "Baju jersey home Real Madrid brand new musim 2020/2021",
+                harga: 85000,
+                gambar: "madrid1.jpeg",
+                star: 5),
+          ),
+          new GestureDetector(
+            onTap: () {
+              Navigator.of(context).push(new MaterialPageRoute(
+                builder: (BuildContext context) => DetailProduk(
+                  nama: "Jersey away AC Milan",
+                  deskripsi:
+                      "Baju jersey away AC Milan brand new musim 2020/2021, tersedia size S,M,L,XL. Size chart PxL : S(50x68), M(52x70), L(54x72), XL(56x74)",
+                  harga: 85000,
+                  gambar: "milan2.jpeg",
+                  star: 4,
+                ),
+              ));
+            },
+            child: ProductBox(
+                nama: "Jersey away AC Milan",
+                deskripsi:
+                    "Baju jersey away AC milan brand new musim 2020/2021",
+                harga: 85000,
+                gambar: "milan2.jpeg",
+                star: 4),
+          ),
+          new GestureDetector(
+            onTap: () {
+              Navigator.of(context).push(new MaterialPageRoute(
+                builder: (BuildContext context) => DetailProduk(
+                  nama: "Jersey home Manchester United",
+                  deskripsi:
+                      "Baju jersey home Manchester United brand new musim 2020/2021, tersedia size S,M,L,XL. Size chart PxL : S(50x68), M(52x70), L(54x72), XL(56x74)",
+                  harga: 85000,
+                  gambar: "mu1.jpeg",
+                  star: 5,
+                ),
+              ));
+            },
+            child: ProductBox(
+                nama: "Jersey home Manchester United",
+                deskripsi:
+                    "Baju jersey home Manchester United brand new musim 2020/2021",
+                harga: 85000,
+                gambar: "mu1.jpeg",
+                star: 5),
+          ),
+          new GestureDetector(
+            onTap: () {
+              Navigator.of(context).push(new MaterialPageRoute(
+                builder: (BuildContext context) => DetailProduk(
+                  nama: "Jersey third Paris Saint Germain",
+                  deskripsi:
+                      "Baju jersey third Paris Saint Germain brand new musim 2020/2021, tersedia size S,M,L,XL. Size chart PxL : S(50x68), M(52x70), L(54x72), XL(56x74)",
+                  harga: 85000,
+                  gambar: "psg3.jpeg",
+                  star: 4,
+                ),
+              ));
+            },
+            child: ProductBox(
+                nama: "Jersey third Paris Saint Germain",
+                deskripsi:
+                    "Baju jersey third Paris Saint Germain brand new musim 2020/2021",
+                harga: 85000,
+                gambar: "psg3.jpeg",
+                star: 4),
+          ),
+          new GestureDetector(
+            onTap: () {
+              Navigator.of(context).push(new MaterialPageRoute(
+                builder: (BuildContext context) => DetailProduk(
+                  nama: "Jersey home AS Roma",
+                  deskripsi:
+                      "Baju jersey home AS Roma brand new musim 2020/2021, tersedia size S,M,L,XL. Size chart PxL : S(50x68), M(52x70), L(54x72), XL(56x74)",
+                  harga: 85000,
+                  gambar: "roma1.jpeg",
+                  star: 4,
+                ),
+              ));
+            },
+            child: ProductBox(
+                nama: "Jersey home AS Roma",
+                deskripsi: "Baju jersey home AS Roma brand new musim 2020/2021",
+                harga: 85000,
+                gambar: "roma1.jpeg",
+                star: 4),
+          )
         ],
       ),
     );
@@ -132,7 +259,7 @@ class ProductBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.orange[100],
+      color: Colors.deepPurple[50],
       padding: EdgeInsets.all(2),
       height: 120,
       child: Card(
@@ -147,16 +274,19 @@ class ProductBox extends StatelessWidget {
               child: Container(
                 padding: EdgeInsets.all(5),
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Text(this.nama,
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                        )),
+                    Text(
+                      this.nama,
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                      textAlign: TextAlign.left,
+                    ),
                     Text(this.deskripsi),
                     Text(
                       "Harga: " + this.harga.toString(),
-                      style: TextStyle(color: Colors.orange.shade900),
+                      style: TextStyle(color: Colors.black, fontSize: 18.0),
                     ),
                   ],
                 ),

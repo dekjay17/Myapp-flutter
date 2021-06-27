@@ -14,7 +14,7 @@ class DataScreen extends StatefulWidget {
 }
 
 class _DataScreenState extends State<DataScreen> {
-  final String url = "http://192.168.1.34/api/inputs";
+  final String url = "http://192.168.1.8/api/inputs";
 
   Future getData() async {
     var response = await http.get(Uri.parse(url));
@@ -23,7 +23,7 @@ class _DataScreenState extends State<DataScreen> {
   }
 
   Future deleteData(String dataId) async {
-    final String url = "http://192.168.1.34/api/inputs/" + dataId;
+    final String url = "http://192.168.1.8/api/inputs/" + dataId;
     var response = await http.delete(Uri.parse(url));
 
     return jsonDecode(response.body);
@@ -33,10 +33,10 @@ class _DataScreenState extends State<DataScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Pemesanan Barang'),
+          title: Text('History Pemesanan'),
         ),
         floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.orange[800],
+          backgroundColor: Colors.deepPurple,
           onPressed: () {
             Navigator.push(context,
                 MaterialPageRoute(builder: (context) => InputPenjualan()));
@@ -44,7 +44,7 @@ class _DataScreenState extends State<DataScreen> {
           child: Icon(Icons.add),
         ),
         body: Container(
-          color: Colors.orange[100],
+          color: Colors.deepPurple[100],
           child: Column(
             children: [
               FutureBuilder(

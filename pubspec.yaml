@@ -51,15 +51,21 @@ flutter:
   uses-material-design: true
   assets:
     - assets/appimage/about.png
-    - assets/appimage/Daniel.jpeg
-    - assets/appimage/Keranjang.png
-    - assets/appimage/mi.png
-    - assets/appimage/Redmi 5+.jpg
-    - assets/appimage/Redmi 6A.jpg
-    - assets/appimage/Redmi Note 7.jpg
-    - assets/appimage/Redmi Note 8 Pro.jpg
-    - assets/appimage/Redmi Note 9 Pro.jpg
     - assets/appimage/wallet.jpg
+    - assets/appimage/arsenal1.jpeg
+    - assets/appimage/arthajaya.jpeg
+    - assets/appimage/barca3.jpeg
+    - assets/appimage/chelsea3.jpeg
+    - assets/appimage/inter1.jpeg
+    - assets/appimage/liverpool1.jpeg
+    - assets/appimage/juve1.jpeg
+    - assets/appimage/liverpool3.jpeg
+    - assets/appimage/madrid1.jpeg
+    - assets/appimage/milan2.jpeg
+    - assets/appimage/mu1.jpeg
+    - assets/appimage/psg3.jpeg
+    - assets/appimage/roma1.jpeg
+    - assets/appimage/cover.jpeg
 
     
   

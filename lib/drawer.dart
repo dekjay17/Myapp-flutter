@@ -10,16 +10,16 @@ class Menudrawer extends StatelessWidget {
         children: <Widget>[
           UserAccountsDrawerHeader(
             //bagian header pada drawer
-            accountName: Text("Daniel Sihite"),
-            accountEmail: Text("sihitedaniel710@gmail.com"),
+            accountName: Text("Dwi Arthajaya"),
+            accountEmail: Text("dwi.arthajaya@undiksha.ac.id"),
             currentAccountPicture: GestureDetector(
               onTap: () {},
               child: CircleAvatar(
-                backgroundImage: AssetImage("assets/appimage/Daniel.jpeg"),
+                backgroundImage: AssetImage("assets/appimage/arthajaya.jpeg"),
               ),
             ),
             decoration: BoxDecoration(
-                color: Colors.orange[800]), // mewarnai background drawer
+                color: Colors.deepPurple[900]), // mewarnai background drawer
           ),
           ListTile(
             //widget untuk drawer di bagian list tilenya

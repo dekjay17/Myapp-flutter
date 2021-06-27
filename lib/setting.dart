@@ -7,7 +7,7 @@ class Setting extends StatelessWidget {
       appBar: new AppBar(
           title: new Text("Setting"), actions: [new Icon(Icons.search)]),
       body: Container(
-          color: Colors.orange[100],
+          color: Colors.deepPurple[50],
           child: new ListView(
             children: <Widget>[
               Container(

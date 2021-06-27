@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_wahyu/Auth/autentikasi.dart';
 import 'package:flutter_application_wahyu/Auth/auth_page.dart';
-import 'dashboard.dart' as dashboard;
 import 'package:provider/provider.dart';
 
 void main() {
@@ -15,9 +14,9 @@ class MyApp extends StatelessWidget {
       create: (ctx) => Autentikasi(),
       builder: (context, child) => MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: "Xiaomi",
+        title: "Jersey.id",
         theme: ThemeData(
-          primarySwatch: Colors.green,
+          primarySwatch: Colors.deepPurple,
         ),
         home: LoginPage(),
       ),

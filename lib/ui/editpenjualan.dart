@@ -14,8 +14,7 @@ class EditPenjualan extends StatelessWidget {
   TextEditingController hargaController = TextEditingController();
   Future updateData() async {
     final response = await http.put(
-        Uri.parse(
-            "http://192.168.1.34:80/api/inputs/" + input['id'].toString()),
+        Uri.parse("http://192.168.1.8/api/inputs/" + input['id'].toString()),
         body: {
           "namaBarang": nameController.text,
           "namaPembeli": pembeliController.text,
@@ -32,7 +31,7 @@ class EditPenjualan extends StatelessWidget {
         leading: Icon(Icons.keyboard_arrow_left),
       ),
       body: Container(
-        color: Colors.orange[100],
+        color: Colors.deepPurple[50],
         child: Form(
           key: _formkey,
           child: Padding(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_wahyu/ui/inputpenjualan.dart';
 
 class DetailProduk extends StatefulWidget {
   DetailProduk(
@@ -28,9 +29,17 @@ class _DetailProdukState extends State<DetailProduk> {
     return Scaffold(
       appBar: new AppBar(
         title: new Text("${widget.nama}"),
-        backgroundColor: Colors.orangeAccent[500],
+        backgroundColor: Colors.deepPurple[900],
       ),
-      backgroundColor: Colors.orange[100],
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.deepPurple,
+        onPressed: () {
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) => InputPenjualan()));
+        },
+        child: Icon(Icons.add),
+      ),
+      backgroundColor: Colors.deepPurple[50],
       body: new Container(
         width: double.infinity,
         child: new ListView(
@@ -45,7 +54,7 @@ class _DetailProdukState extends State<DetailProduk> {
                 gradient: LinearGradient(
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
-                  colors: [const Color(0xFFE65100), const Color(0xFFFF6F)],
+                  colors: [const Color(0xFF311B92), const Color(0xFFEDE7F6)],
                 ),
               ),
               padding: EdgeInsets.all(10.0),
@@ -61,7 +70,7 @@ class _DetailProdukState extends State<DetailProduk> {
                       style: new TextStyle(
                           fontSize: 18.0,
                           fontWeight: FontWeight.bold,
-                          color: Colors.white,
+                          color: Colors.black,
                           fontFamily: "NeoSansBold"),
                     ),
                   )
@@ -70,12 +79,12 @@ class _DetailProdukState extends State<DetailProduk> {
             ),
             Container(
               padding: EdgeInsets.all(10),
-              color: Colors.orange[100],
+              color: Colors.white,
               width: double.infinity,
               height: double.maxFinite,
               child: new Text(
                 widget.deskripsi,
-                style: new TextStyle(color: Colors.white),
+                style: new TextStyle(fontSize: 16.0, color: Colors.black),
               ),
             )
           ],

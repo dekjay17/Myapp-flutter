@@ -16,17 +16,17 @@ class _DashboardState extends State<Dashboard> {
     return Scaffold(
         appBar: new AppBar(
             title: new Text("Dashboard"), actions: [new Icon(Icons.search)]),
-        backgroundColor: Colors.orange[100],
+        backgroundColor: Colors.deepPurple[50],
         drawer: drawer.Menudrawer(),
         body: Container(
-          color: Colors.orange[100],
+          color: Colors.deepPurple[50],
           child: Container(
             child: Column(
               children: <Widget>[
                 Container(
                   //padding: EdgeInsets.only(bottom: 10, top: 10),
                   child: Image(
-                    image: AssetImage("assets/appimage/mi.png"),
+                    image: AssetImage("assets/appimage/cover.jpeg"),
                   ),
                 ),
                 Container(
@@ -89,7 +89,7 @@ class _DashboardState extends State<Dashboard> {
                                 ),
                                 Column(
                                   children: <Widget>[
-                                    Text("Penjualan"),
+                                    Text("History"),
                                   ],
                                 ),
                               ],
